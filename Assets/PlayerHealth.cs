@@ -27,6 +27,14 @@ public class PlayerHealth : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    private void Update()
+    {
+        if (transform.position.y <= -10)
+        {
+            CurrentHealth = 0;
+        }
+    }
+
     public void Damage(int damage)
     {
         CurrentHealth -= damage;
