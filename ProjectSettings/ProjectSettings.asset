@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 28d25e77559669b4597d3bad6f4a4707
+  productGUID: ac2d99bd3e2e6ed4eac5d42f8aa45721
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: ForestShootout
+  productName: Forestshootout
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -163,7 +163,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.ForestShootout
+    Standalone: com.InfimaGames.LowPolyShooterPack
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -670,14 +670,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: ForestShootout
+  metroPackageName: Forestshootout
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: ForestShootout
+  metroApplicationDescription: Forestshootout
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -749,10 +749,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 0f0bcd4e-c2c2-475f-9f50-4eeed7df6f79
+  cloudProjectId: 3a2729af-bf44-4cb6-8713-99bee87530f6
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: Forestshootout
   organizationId: bnad22-student-foi-hr
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

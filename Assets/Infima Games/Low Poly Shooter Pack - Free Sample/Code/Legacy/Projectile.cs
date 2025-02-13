@@ -110,8 +110,8 @@ public class Projectile : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-		//If bullet collides with "Target" tag
-		if (collision.transform.tag == "Target") 
+        //If bullet collides with "Target" tag
+        if (collision.transform.tag == "Target") 
 		{
 			//Toggle "isHit" on target object
 			collision.transform.gameObject.GetComponent
