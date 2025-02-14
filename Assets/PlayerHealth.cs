@@ -17,12 +17,16 @@ public class PlayerHealth : MonoBehaviour
             _currentHealth = value;
             if (_currentHealth <= 0)
             {
-                EnemyDied();
+                PlayerDied();
+            }
+            if (_currentHealth > maxHealth)
+            {
+                _currentHealth = maxHealth;
             }
         }
     }
 
-    private void EnemyDied()
+    private void PlayerDied()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

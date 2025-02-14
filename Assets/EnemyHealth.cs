@@ -5,10 +5,10 @@ using UnityEngine.UI;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int damage = 10;
     [SerializeField] private Slider healthBar;
     [SerializeField] private Transform player;
 
+    public int damage = 10;
     private int _currentHealth;
     private Animator _animator;
     private NavMeshAgent agent;
@@ -34,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
         agent.enabled = false;
         GetComponent<CapsuleCollider>().enabled = false;
         _animator.SetBool("isDead", true);
+        Victory.Instance.KilledEnemy(gameObject);
     }
 
     public bool IsDead()

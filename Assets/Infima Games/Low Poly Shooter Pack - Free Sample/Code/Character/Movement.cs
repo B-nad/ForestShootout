@@ -1,7 +1,6 @@
 ﻿// Copyright 2021, Infima Games. All Rights Reserved.
 
 using System.Linq;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack

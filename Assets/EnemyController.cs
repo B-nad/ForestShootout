@@ -43,6 +43,7 @@ public class EnemyController : MonoBehaviour
             {
                 playerHealth.Damage(10);
                 attackDelay = 0f;
+                AudioManager.PlayFromResources(Sound.Attack,1,Random.Range(0.9f,1.1f));
             }
         }
         else

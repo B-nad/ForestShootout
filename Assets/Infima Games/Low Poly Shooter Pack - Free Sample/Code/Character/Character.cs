@@ -4,6 +4,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 
 namespace InfimaGames.LowPolyShooterPack
 {
@@ -189,8 +190,8 @@ namespace InfimaGames.LowPolyShooterPack
 		}
 		protected override void Start()
 		{
-			//Cache a reference to the holster layer's index.
-			layerHolster = characterAnimator.GetLayerIndex("Layer Holster");
+            //Cache a reference to the holster layer's index.
+            layerHolster = characterAnimator.GetLayerIndex("Layer Holster");
 			//Cache a reference to the action layer's index.
 			layerActions = characterAnimator.GetLayerIndex("Layer Actions");
 			//Cache a reference to the overlay layer's index.
@@ -250,7 +251,6 @@ namespace InfimaGames.LowPolyShooterPack
 		public override bool IsRunning() => running;
 		
 		public override bool IsAiming() => aiming;
-		public override bool IsCursorLocked() => cursorLocked;
 		
 		public override bool IsTutorialTextVisible() => tutorialTextVisible;
 		
@@ -383,15 +383,13 @@ namespace InfimaGames.LowPolyShooterPack
 			characterAnimator.CrossFade("Fire Empty", 0.05f, layerOverlay, 0);
 		}
 
-		/// <summary>
-		/// Updates the cursor state based on the value of the cursorLocked variable.
-		/// </summary>
-		private void UpdateCursorState()
+        /// <summary>
+        /// Updates the cursor state based on the value of the cursorLocked variable.
+        /// </summary>
+
+        private void UpdateCursorState()
 		{
-			//Update cursor visibility.
-			Cursor.visible = !cursorLocked;
-			//Update cursor lock state.
-			Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+			
 		}
 
 		/// <summary>
